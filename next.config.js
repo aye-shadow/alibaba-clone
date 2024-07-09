@@ -2,7 +2,6 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-    basePath: "/alibaba-clone-next",
     output: 'export',
     images: { unoptimized: true }
    
