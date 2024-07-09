@@ -23,7 +23,7 @@ const StreamlineOrdering = () => {
     { icon: <LuBadgeCheck />, title: "Identify the right one", desc: 'Make informed decisions to select the ideal products and suppliers for your business', image: IdentifyImage },
     { icon: <HiMiniArrowsUpDown />, title: "Pay with confidence", desc: 'Ensure secure and reliable payment processes for your transactions', image: PayImage },
     { icon: <FaGlobeAsia />, title: "Fulfill with transparency", desc: 'Maintain clear and transparent fulfillment processes to build trust with your partners', image: TransImage },
-    { icon: <RiUserSettingsLine />, title: "Manage with ease", desc: 'Simplify and streamline your business management for efficient operations', image: ManageImage },
+    { icon: <RiUserSettingsLine />, title: "Manage with ease", desc: 'Simplify and streamline your business management for efficient operations.', image: ManageImage },
   ];
 
   const [activeIndex, setActiveIndex] = useState<number>(0);
