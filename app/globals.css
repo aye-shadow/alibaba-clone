@@ -3,28 +3,71 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --main-orange: 254, 104, 0;
+  --main-brown: 58, 25, 10;
+  --lighter-brown: #402013;
+  --lightest-brown: #4e3226;
+  --border-col: #dddddd;
+  --shadow-col: #C1C1C1;
+  --gray-bg: #f4f4f4;
+  --yellow: #fdc100;
+  --blue: #008dfe;
+  --blue-rgb: 0, 141, 254;
+  --dark-blue: #1e293b;
+  --dark-blue-rgb: 30, 41, 59;
+  --footer-grey: #344154;
+  --footer-text-grey: #687385;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.footerGreyText {
+  color: var(--footer-text-grey)
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.blueText {
+  color: var(--blue);
 }
+
+.greyText {
+  color: var(--footer-text-grey)
+}
+
+.blueBg {
+  background: var(--blue)
+}
+
+.transBlueBg {
+  background: #cce8ff;
+}
+
+.orangeText {
+  color: rgb(var(--main-orange))
+}
+
+.orangeBg {
+  background: rgb(var(--main-orange));
+}
+
+.blackGradient {
+  position: absolute;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+  pointer-events: none; 
+  z-index: 1;
+}
+
+.footerList li {
+  padding-bottom: 8px; /* Adjust the value as needed */
+  color: var(--footer-text-grey)
+}
+
+.tradeColor {
+  color: var(--yellow)
+}
+
+.verifiedColor {
+  color: var(--blue)
+}
+
+
 
 @layer utilities {
   .text-balance {
